@@ -9,6 +9,11 @@ using System.Windows.Forms;
 
 namespace SistemaPrestamo
 {
+    /*EQUIPO 4  3° "A"
+    20241047 Hernandez Tomas Maria Guadalupe
+    20241031 Romero Hernandez Jesus Diego
+    20241059 Gomez JR Carlos Alberto
+    20241091 Medellin Gonzalez Israel*/
     class Conexion
     {
         //declaramos la cadena de coneccion para poder conectar con la base 
