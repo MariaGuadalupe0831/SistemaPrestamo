@@ -58,7 +58,6 @@ namespace SistemaPrestamo
             historial.Show();
             this.Hide();
         }
-
         private void cargarDatos()
         {
             conexion = new Conexion();
@@ -71,7 +70,6 @@ namespace SistemaPrestamo
             comboBoxPrestamo.ValueMember = "id_equipo";
             comboBoxPrestamo.DisplayMember = "nombre_equipo";
         }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             conexion = new Conexion();
