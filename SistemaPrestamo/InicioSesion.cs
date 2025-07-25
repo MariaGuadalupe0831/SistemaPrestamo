@@ -36,14 +36,14 @@ namespace SistemaPrestamo
 
                 if (reader.Read())
                 {
-                    MessageBox.Show("Inicio de sesion correcto, Bievenido");
+                    MessageBox.Show("Inicio de sesión correcto, Bienvenido");
                     Menu men = new Menu();
                     men.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Correo o contraseña incorrectos");
+                    MessageBox.Show("Correo o contraseña incorrecta");
                 }
 
                 reader.Close();
@@ -55,6 +55,11 @@ namespace SistemaPrestamo
             }
 
 
+        }
+
+        private void chkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
+        {
+            txtContrasena.UseSystemPasswordChar = !chkMostrarContrasena.Checked;
         }
     }
 }
