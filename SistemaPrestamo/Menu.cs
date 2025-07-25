@@ -26,7 +26,7 @@ namespace SistemaPrestamo
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            GestionUsuario usuario = new GestionUsuario();  
+            GestionUsuario usuario = new GestionUsuario();
             usuario.Show();
             this.Hide();
         }
