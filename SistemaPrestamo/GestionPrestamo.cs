@@ -17,6 +17,7 @@ namespace SistemaPrestamo
         public GestionPrestamo()
         {
             InitializeComponent();
+            cargaDatos();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,6 +61,7 @@ namespace SistemaPrestamo
             nuevoPrestamo.Show();
             this.Hide();
         }
+
         private void cargaDatos()
         {
             conexion = new Conexion();

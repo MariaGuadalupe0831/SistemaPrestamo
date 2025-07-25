@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace SistemaPrestamo
 {
     public partial class GestionUsuario : Form
     {
+        Conexion conexion;
         public GestionUsuario()
         {
             InitializeComponent();
+            llenargrid();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,6 +60,28 @@ namespace SistemaPrestamo
             NuevoUsuario nuevoUsuario = new NuevoUsuario();
             nuevoUsuario.Show();
             this.Hide();
+        }
+
+
+        public void llenargrid()
+        {
+
+            conexion = new Conexion();
+            MySqlConnection cone = conexion.GetConnection();
+            try
+            {
+                string consulta = "select * from usuarios";
+                var cmd = new MySqlCommand(consulta, cone);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
+                dataGridView1.DataSource = tabla;
+                cone.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

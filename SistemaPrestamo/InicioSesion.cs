@@ -26,7 +26,7 @@ namespace SistemaPrestamo
 
             try
             {
-                string consulta = "select correo, ADPASSWORD from administrador where correo =@Correo AND ADPASSWORD =@contrasena";
+                string consulta = "select correo, contrasena from administrador where correo =@Correo AND contrasena =@contrasena";
                 var cmd = new MySqlCommand(consulta, cone);
 
                 cmd.Parameters.AddWithValue("@Correo", txtCorreo.Text);
