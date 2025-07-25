@@ -20,14 +20,14 @@ namespace SistemaPrestamo
             llenargrid();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Menu menu = new Menu();
             menu.Show();
             this.Hide();
         }
 
-        private void btnInventario_Click(object sender, EventArgs e)
+        private void btnInventario_Click_1(object sender, EventArgs e)
         {
             Inventario inventario = new Inventario();
             inventario.Show();
@@ -62,7 +62,6 @@ namespace SistemaPrestamo
             this.Hide();
         }
 
-
         public void llenargrid()
         {
 
@@ -83,5 +82,6 @@ namespace SistemaPrestamo
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

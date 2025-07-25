@@ -20,44 +20,39 @@ namespace SistemaPrestamo
             cargarDatos();
         }
 
-        private void btnInicio_Click(object sender, EventArgs e)
+        private void btnInicio_Click_1(object sender, EventArgs e)
         {
             Menu menu = new Menu();
             menu.Show();
             this.Hide();
         }
 
-        private void btnInventario_Click(object sender, EventArgs e)
+        private void btnInventario_Click_1(object sender, EventArgs e)
         {
             Inventario inventario = new Inventario();
             inventario.Show();
             this.Hide();
         }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
+        private void btnUsuarios_Click_1(object sender, EventArgs e)
         {
             GestionUsuario usuario = new GestionUsuario();
             usuario.Show();
             this.Hide();
         }
 
-        private void btnPrestamos_Click(object sender, EventArgs e)
+        private void btnPrestamos_Click_1(object sender, EventArgs e)
         {
             GestionPrestamo prestamo = new GestionPrestamo();
             prestamo.Show();
             this.Hide();
         }
 
-        private void btnHistorial_Click(object sender, EventArgs e)
+        private void btnHistorial_Click_1(object sender, EventArgs e)
         {
             HistorialPrestamo historial = new HistorialPrestamo();
             historial.Show();
             this.Hide();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void cargarDatos()

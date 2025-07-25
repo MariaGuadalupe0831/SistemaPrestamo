@@ -79,6 +79,7 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "Historial";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // button5
             // 
@@ -91,6 +92,7 @@
             this.button5.TabIndex = 17;
             this.button5.Text = "+ Agregar nuevo Accesorio/Equipo";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // dgvDataInventario
             // 
@@ -116,6 +118,7 @@
             this.comboBoxSeleccionar.Size = new System.Drawing.Size(195, 34);
             this.comboBoxSeleccionar.TabIndex = 15;
             this.comboBoxSeleccionar.Text = "Selecciona el tipo";
+            this.comboBoxSeleccionar.SelectedIndexChanged += new System.EventHandler(this.comboBoxSeleccionar_SelectedIndexChanged_1);
             // 
             // label1
             // 
@@ -138,6 +141,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Prestamos";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button4
             // 
@@ -149,6 +153,7 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "Usuarios";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button2
             // 
@@ -160,6 +165,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Inventario";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -171,6 +177,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Inicio";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label3
             // 

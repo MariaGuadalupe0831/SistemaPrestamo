@@ -118,6 +118,7 @@
             this.btnPrestamos.TabIndex = 11;
             this.btnPrestamos.Text = "Prestamos";
             this.btnPrestamos.UseVisualStyleBackColor = true;
+            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click_1);
             // 
             // btnUsuarios
             // 
@@ -129,6 +130,7 @@
             this.btnUsuarios.TabIndex = 9;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click_1);
             // 
             // btnHistorial
             // 
@@ -140,6 +142,7 @@
             this.btnHistorial.TabIndex = 10;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click_1);
             // 
             // btnInventario
             // 
@@ -151,6 +154,7 @@
             this.btnInventario.TabIndex = 7;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click_1);
             // 
             // btnInicio
             // 
@@ -162,6 +166,7 @@
             this.btnInicio.TabIndex = 6;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click_1);
             // 
             // dataGridViewHistorial
             // 

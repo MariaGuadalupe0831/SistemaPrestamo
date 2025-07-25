@@ -120,6 +120,7 @@
             this.btnHistorial.TabIndex = 11;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // btnPrestamos
             // 
@@ -131,6 +132,7 @@
             this.btnPrestamos.TabIndex = 10;
             this.btnPrestamos.Text = "Prestamos";
             this.btnPrestamos.UseVisualStyleBackColor = true;
+            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
             // btnUsuarios
             // 
@@ -142,6 +144,7 @@
             this.btnUsuarios.TabIndex = 9;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnInventario
             // 
@@ -153,6 +156,7 @@
             this.btnInventario.TabIndex = 8;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click_1);
             // 
             // button1
             // 
@@ -164,6 +168,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Inicio";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnAgregar
             // 
@@ -176,6 +181,7 @@
             this.btnAgregar.TabIndex = 14;
             this.btnAgregar.Text = "+ Registrar nuevo usuario";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label3
             // 
